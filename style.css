@@ -1,40 +1,44 @@
 
+html,body { 
+	height:100%; 
+	width:100%; 
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
 body{
-	background-color:rgb(254, 254, 255);;
+	background-color:rgb(254, 254, 255);
 	font-family: 'Proxima Nova', Georgia, sans-serif;
+	margin: 0;
 }
 h1{
 	font-family: 'Proxima Nova', Georgia, sans-serif;
 	font-size: 3vw;
 	text-align: center;
 }
-hr{
-	margin: 0;
-	height: 1px;
-	color: rgb(218, 218, 218);
-	background-color: rgb(167, 167, 167);
-	border: 0;
-	position: relative;
-}
 .profile{
 	float: left;
-	background-color: #F8F8FF;
 	font-size: 2.4vw;
 	width: 100%;
+	background-color: #F8F8FF;
+	border-top: solid 1px;
+	border-top-color:  rgb(167, 167, 167);
 }
 .bio{
 	font-size: 2vw;
 }
 .profile p{
 	margin-left: 23vw; 
+	
 }
 .settings {
 	margin-right: 10vw; 
 	margin-top: 6vw; 
-	height: 5vw;
+	height: 4vw;
 	float: right;
-	border: solid;
-	border-color: #211A1D;
+	border: solid 3px;
+	border-color: rgb(31, 26, 26);
 }
 .pp{
 	height: 15vw;
@@ -42,13 +46,12 @@ hr{
 	margin-left: 4vw;
 	font-size: 2vw;
 	float: left;
-	border: solid;
-	border-color: #211A1D;
 	border-radius: 100%;
 }
 .gallerycontainer{
+	margin: 0 auto;
 	width: 100%;
-	height:100%;
+	height: 100%;
 	background-color: #F8F8FF;
 }
 .gallery{

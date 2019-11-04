@@ -6,8 +6,8 @@ $user = array(
 	'city' => 'Paris',
 	'pp' => 'img/pp.jpg',
 	'photos' => array('img/pic6.jpg', 
-	'img/pic4.jpg', 
 	'img/pic3.jpg', 
+	'img/pic4.jpg', 
 	'img/pic2.jpg',
 	'img/pic5.jpg',
 	'img/pic1.jpg'),
@@ -23,7 +23,6 @@ $user = array(
 
 	<body>
 		<h1>Camagru</h1>
-		<hr/>
 		<div class="profile">
 			<img id="pp" class="pp">
 			<img id="settings" class="settings" src="img/gear.png">
