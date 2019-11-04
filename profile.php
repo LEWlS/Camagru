@@ -31,7 +31,9 @@ $user = array(
 			<p id="city">none</p>
 			<p class="bio" id="bio">none</p>
 		</div>
-		<div id="gallery" class='gallery'>
+		<div class="gallerycontainer">
+			<div id="gallery" class='gallery'>
+			</div>
 		</div>
 	</body>
 	<script type="text/javascript">
