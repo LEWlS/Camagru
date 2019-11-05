@@ -22,7 +22,10 @@ $user = array(
 	</head>
 
 	<body>
-		<h1>Camagru</h1>
+		<div class="bandeau">
+			<h1>Camagru</h1>
+		</div>
+		<div class="content">
 		<div class="profile">
 			<img id="pp" class="pp">
 			<img id="settings" class="settings" src="img/gear.png">
@@ -34,18 +37,22 @@ $user = array(
 			<div id="gallery" class='gallery'>
 			</div>
 		</div>
+		</div>
 	</body>
 	<script type="text/javascript">
+			//Getting vars
 			var usernameObject = document.getElementById("usernameandage");
 			var nameObject = document.getElementById("bio");
 			var ppObject = document.getElementById("pp");
 			var cityObject = document.getElementById("city");
 
+			//Profile
 			usernameObject.innerHTML = '<?php echo $user['username']; ?>' +" | " + '<?php echo $user['age']; ?>' + 'yo';
 			nameObject.innerHTML = '<?php echo $user['bio']; ?>';
 			cityObject.innerHTML = '<?php echo $user['city']; ?>';
 			ppObject.src = '<?php echo $user['pp']; ?>';
 
+			//Gallery
 			var galleryObject = document.getElementById('gallery');
 			var photos = <?php echo json_encode($user['photos']); ?>;
 			var pic;
