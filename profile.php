@@ -61,6 +61,9 @@ $user = array(
 				var picObject = document.createElement('img');
 				picObject.className = "pics";
 				picObject.src = photos[pic];
+				picObject.onclick = function() {
+    				window.location.href = 'photo.php';
+				};
 				galleryObject.appendChild(picObject);
 			}
 		</script>	
