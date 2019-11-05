@@ -69,6 +69,9 @@ $coms = array(
 		var pp = document.createElement('img');
 		pp.className = "posterpp";
 		pp.src = <?php echo json_encode($user['pp']); ?>;
+		pp.onclick = function() {
+    				window.location.href = 'profile.php';
+				};
 		posterObject.appendChild(pp);
 
 		var postername = document.createElement('p');
