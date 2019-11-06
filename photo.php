@@ -43,8 +43,10 @@ $coms = array(
 	</head>
 
 	<body>
-		<div class="bandeau">
-			<h1>Camagru</h1>
+	<div class="bandeau">
+			<p id="homeicon">Camagru</p>
+			<img id="settings" class="settings" src="img/settings.png">	
+			<img id="profileicon" class="profileicon" src="img/profile.png">
 		</div>
 		<div class="content">
 		<div class="photocontainer">
@@ -58,6 +60,20 @@ $coms = array(
 		</div>
 	</body>
 	<script type="text/javascript">
+		//Bandeau
+		var profileicon = document.getElementById("profileicon");
+		profileicon.onclick = function() {
+    		window.location.href = 'profile.php';
+		};
+		var settingsicon = document.getElementById("settings");
+		settingsicon.onclick = function() {
+    		window.location.href = 'settings.php';
+		};
+		var homeicon = document.getElementById("homeicon");
+		homeicon.onclick = function() {
+    		window.location.href = 'index.php';
+		};
+
 		//Getting vars
 		var coms = <?php echo json_encode($coms); ?>;
 

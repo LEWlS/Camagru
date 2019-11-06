@@ -23,12 +23,13 @@ $user = array(
 
 	<body>
 		<div class="bandeau">
-			<h1>Camagru</h1>
+			<p id="homeicon">Camagru</p>
+			<img id="settings" class="settings" src="img/settings.png">	
+			<img id="profileicon" class="profileicon" src="img/profile.png">
 		</div>
 		<div class="content">
 		<div class="profile">
 			<img id="pp" class="pp">
-			<img id="settings" class="settings" src="img/gear.png">
 			<p id="usernameandage">none</p>
 			<p id="city">none</p>
 			<p class="bio" id="bio">none</p>
@@ -38,8 +39,22 @@ $user = array(
 			</div>
 		</div>
 		</div>
-	</body>
+	</body> 
 	<script type="text/javascript">
+			//Bandeau
+			var profileicon = document.getElementById("profileicon");
+			profileicon.onclick = function() {
+    				window.location.href = 'profile.php';
+				};
+			var settingsicon = document.getElementById("settings");
+			settingsicon.onclick = function() {
+    				window.location.href = 'settings.php';
+				};
+			var homeicon = document.getElementById("homeicon");
+			homeicon.onclick = function() {
+    				window.location.href = 'index.php';
+				};
+
 			//Getting vars
 			var usernameObject = document.getElementById("usernameandage");
 			var nameObject = document.getElementById("bio");
