@@ -37,7 +37,7 @@ $coms = array(
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Photo</title>
+		<title>Camagru</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" type="text/css" href="fonts/fonts.min.css" />
 	</head>
