@@ -1,4 +1,5 @@
 <?php
+$photo = 'img/pic4.jpg';
 $user = array(
 	'username' => 'Lewis',
 	'age' => '22',
@@ -56,12 +57,102 @@ $coms = array(
 		'pp' => 'img/Arthurpp.jpg',
 		'likes' => 0
 	)
-); 
+);
+$post1 = array('photo' => $photo,
+	'poster' => $user, 
+ 	'likes' =>$likes, 
+	'coms' => $coms);
+
+$photo = 'img/pic3.jpg';
+$user = array(
+	'username' => 'Antoine',
+	'age' => '22',
+	'bio' => "J\'aime la photo et le css!",
+	'city' => 'Paris',
+	'pp' => 'img/Antoinepp.jpg',
+	'photos' => array('img/pic6.jpg', 
+	'img/pic3.jpg', 
+	'img/pic4.jpg', 
+	'img/pic2.jpg',
+	'img/pic5.jpg',
+	'img/pic1.jpg'),
+);
+$likes = 200;
+$coms = array(
+	array(
+		'username' => 'Lewis',
+		'content' => "nice",
+		'pp' => 'img/pp.jpg',
+		'likes' => 1
+	),
+	array(
+		'username' => 'Arthur',
+		'content' => " La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer ce que l'on a imaginé visuellement et/ou à la suite d'un stimuli visuel. Le terme « photographie » désigne aussi l'image obtenue, phototype2 (photographie visible et stable qu'elle soit négative ou positive, qu'on obtient après l'exposition et le traitement d'une couche sensible) ou non!",
+		'pp' => 'img/Arthurpp.jpg',
+		'likes' => 0
+	),
+	array(
+		'username' => 'Arthur',
+		'content' => " La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer ce que l'on a imaginé visuellement et/ou à la suite d'un stimuli visuel. Le terme « photographie » désigne aussi l'image obtenue, phototype2 (photographie visible et stable qu'elle soit négative ou positive, qu'on obtient après l'exposition et le traitement d'une couche sensible) ou non!",
+		'pp' => 'img/Arthurpp.jpg',
+		'likes' => 0
+	),
+	array(
+		'username' => 'Arthur',
+		'content' => " La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer ce que l'on a imaginé visuellement et/ou à la suite d'un stimuli visuel. Le terme « photographie » désigne aussi l'image obtenue, phototype2 (photographie visible et stable qu'elle soit négative ou positive, qu'on obtient après l'exposition et le traitement d'une couche sensible) ou non!",
+		'pp' => 'img/Arthurpp.jpg',
+		'likes' => 0
+	),
+	array(
+		'username' => 'Arthur',
+		'content' => " La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer ce que l'on a imaginé visuellement et/ou à la suite d'un stimuli visuel. Le terme « photographie » désigne aussi l'image obtenue, phototype2 (photographie visible et stable qu'elle soit négative ou positive, qu'on obtient après l'exposition et le traitement d'une couche sensible) ou non!",
+		'pp' => 'img/Arthurpp.jpg',
+		'likes' => 0
+	),
+	array(
+		'username' => 'Arthur',
+		'content' => " La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer ce que l'on a imaginé visuellement et/ou à la suite d'un stimuli visuel. Le terme « photographie » désigne aussi l'image obtenue, phototype2 (photographie visible et stable qu'elle soit négative ou positive, qu'on obtient après l'exposition et le traitement d'une couche sensible) ou non!",
+		'pp' => 'img/Arthurpp.jpg',
+		'likes' => 0
+	)
+);
+$post2 = array('photo' => $photo,
+	'poster' => $user, 
+ 	'likes' =>$likes, 
+	 'coms' => $coms);
+$photo = 'img/pic5.jpg';
+$user = array(
+		 'username' => 'Arthur',
+		 'age' => '22',
+		 'bio' => "J\'aime la photo et le css!",
+		 'city' => 'Paris',
+		 'pp' => 'img/Arthurpp.jpg',
+		 'photos' => array('img/pic6.jpg', 
+		 'img/pic3.jpg', 
+		 'img/pic4.jpg', 
+		 'img/pic2.jpg',
+		 'img/pic5.jpg',
+		 'img/pic1.jpg'),
+	 );
+$likes = 0;
+$coms = array(
+		 array(
+			 'username' => 'Lewis',
+			 'content' => "cool tho",
+			 'pp' => 'img/pp.jpg',
+			 'likes' => 1
+		 )
+	 );
+$post3 = array('photo' => $photo,
+	 'poster' => $user, 
+	  'likes' =>$likes, 
+	  'coms' => $coms);
+$posts = array($post3, $post1, $post2); 
 ?>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Photo</title>
+		<title>Home</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" type="text/css" href="fonts/fonts.min.css" />
 	</head>
@@ -89,6 +180,9 @@ $coms = array(
 		homeicon.onclick = function() {
     		window.location.href = 'index.php';
 		};
+		var posts = <?php echo json_encode($posts); ?>;
+		for (j in posts)
+		{
 		//Content
 			var photocontainerObject = document.createElement('div');
 			photocontainerObject.className = "photocontainerhome";
@@ -98,7 +192,10 @@ $coms = array(
 
 			var photoObject = document.createElement('img');
 			photoObject.className = "photohome";
-			photoObject.src = 'img/pic4.jpg'
+			photoObject.src = posts[j]['photo'];
+			photoObject.onclick = function() {
+    				window.location.href = 'photo.php';
+				};
 
 			var sideObject = document.createElement('div');
 			sideObject.className = "sidehome";
@@ -120,19 +217,19 @@ $coms = array(
 			content.appendChild(photocontainerObject);
 
 		//Getting vars
-		var coms = <?php echo json_encode($coms); ?>;
+		var coms = posts[j]['coms'];
 		
 		//Poster
 		var pp = document.createElement('img');
 		pp.className = "posterhomepp";
-		pp.src = <?php echo json_encode($user['pp']); ?>;
+		pp.src = posts[j]['poster']['pp'];
 		pp.onclick = function() {
     				window.location.href = 'profile.php';
 				};
 		posterObject.appendChild(pp);
 
 		var postername = document.createElement('p');
-		postername.innerHTML = <?php echo json_encode($user['username']); ?>;
+		postername.innerHTML = posts[j]['poster']['username'];
 		posterObject.appendChild(postername);
 
 		//Reactions
@@ -142,7 +239,7 @@ $coms = array(
 		reactionsObject.appendChild(likeimg);
 
 		var likescount = document.createElement('p');
-		likescount.innerHTML = <?php echo json_encode($likes); ?>;
+		likescount.innerHTML = posts[j]['likes'];
 		reactionsObject.appendChild(likescount);
 		
 		var comimg = document.createElement('img');
@@ -169,6 +266,9 @@ $coms = array(
 			comObject.appendChild(compp);
 			compp.className = "compphome";
 			compp.src = coms[i]['pp'];
+			compp.onclick = function() {
+    				window.location.href = 'profile.php';
+				};
 			comObject.appendChild(ppcontainer);
 
 			//Commenter comment
@@ -188,6 +288,7 @@ $coms = array(
 			comObject.appendChild(comcontainer);
 
 			commentsObject.appendChild(comObject);
+		}
 		}
 	</script>	
 </html>

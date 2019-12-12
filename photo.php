@@ -128,6 +128,9 @@ $coms = array(
 			comObject.appendChild(compp);
 			compp.className = "compp";
 			compp.src = coms[i]['pp'];
+			compp.onclick = function() {
+    				window.location.href = 'profile.php';
+				};
 			comObject.appendChild(ppcontainer);
 
 			// //Commenter name

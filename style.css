@@ -208,16 +208,12 @@ body{
 	padding: 0;
 	background-color: #F8F8FF;
 	margin: 0;
-	height: 100%;
 	width:100%; 
-	display: flex;
-	flex-direction: column;
 }
 .photocontainerhome{
-	float: left;
 	margin:0 auto;
 	width: 80.2vmin;
-	margin-bottom: 5vw;
+	margin-bottom: 1vw;
 	background-color:rgb(254, 254, 255);
 	margin-top: 100px;
 	border: solid 1px;
@@ -249,9 +245,7 @@ body{
 	margin-top: 1.4vmin;
 }
 .photohome{
-	height: 60.1vmin;
-	border-bottom: solid 1px;
-	border-color:  rgb(186, 182, 207);
+	width: 80.2vmin;
 }
 .commentshome{
 	width: 100%;
@@ -261,6 +255,8 @@ body{
 	overflow-y: scroll;
 }
 .reactionshome{
+	border-top: solid 1px;
+	border-color:  rgb(186, 182, 207);
 	float: left;
 	width: 100%;
 	margin: 0;
