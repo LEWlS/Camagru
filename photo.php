@@ -11,6 +11,7 @@ $user = array(
 	'img/pic2.jpg',
 	'img/pic5.jpg',
 	'img/pic1.jpg'),
+	'userid' => '1'
 );
 $likes = 13;
 $coms = array(
@@ -86,7 +87,7 @@ $coms = array(
 		pp.className = "posterpp";
 		pp.src = <?php echo json_encode($user['pp']); ?>;
 		pp.onclick = function() {
-    				window.location.href = 'profile.php';
+    				window.location.href = 'profile.php'+'?userid='+ <?php echo json_encode($user['userid']); ?>;
 				};
 		posterObject.appendChild(pp);
 

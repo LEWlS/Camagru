@@ -61,7 +61,8 @@ $coms = array(
 $post1 = array('photo' => $photo,
 	'poster' => $user, 
  	'likes' =>$likes, 
-	'coms' => $coms);
+	'coms' => $coms,
+	'id' => '1');
 
 $photo = 'img/pic3.jpg';
 $user = array(
@@ -119,7 +120,8 @@ $coms = array(
 $post2 = array('photo' => $photo,
 	'poster' => $user, 
  	'likes' =>$likes, 
-	 'coms' => $coms);
+	 'coms' => $coms,
+	 'id' => '2');
 $photo = 'img/pic5.jpg';
 $user = array(
 		 'username' => 'Arthur',
@@ -146,7 +148,8 @@ $coms = array(
 $post3 = array('photo' => $photo,
 	 'poster' => $user, 
 	  'likes' =>$likes, 
-	  'coms' => $coms);
+	  'coms' => $coms,
+	'id' => '3');
 $posts = array($post3, $post1, $post2); 
 ?>
 <html>
@@ -194,7 +197,7 @@ $posts = array($post3, $post1, $post2);
 			photoObject.className = "photohome";
 			photoObject.src = posts[j]['photo'];
 			photoObject.onclick = function() {
-    				window.location.href = 'photo.php';
+    				window.location.href = 'photo.php'+ '?id=' + posts[j]['id'];
 				};
 
 			var sideObject = document.createElement('div');
