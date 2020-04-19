@@ -6,7 +6,8 @@ J'ai été de chargé du front. J'ai alors travaillé à rendre le site aussi be
 
 On a été contraint de retourner à la programmation en C pour terminer notre Cursus dans les temps et le projet est donc inachevé pour l'instant.
 
- Samples | Samples
--------------------------|-------------------------
-![](pics/pic1.png)  |  ![](pics/Pic2.png) 
-![](pics/pic5.png)  | ![](pics/pic4.png)
+
+![](pics/pic1.png)  
+![](pics/Pic2.png) 
+![](pics/pic5.png)  
+![](pics/pic4.png)
