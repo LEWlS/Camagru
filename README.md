@@ -1,10 +1,10 @@
 # Camagru
 
-On a commencer ce projet juste après la "Piscine Web" de l'école 42, une formation accélérer de deux semaines en HTML, CSS, PHP et Mysql. Nous etions limité à ces technologies et au JavaScript. Il a donc fallut approfondir les bases acquises pendant la piscine et prendre em main le Javascript.
+On a commencé ce projet juste après la "Piscine Web" de l'école 42, une formation accélérée de deux semaines en HTML, CSS, PHP et Mysql. Nous étions limité à ces technologies et au JavaScript. Il a donc fallut approfondir les bases acquises pendant la piscine et prendre en main le Javascript à peine survolé jusqu'ici.
 
 J'ai été de chargé du front. J'ai alors travaillé à rendre le site aussi beau et ergonomique que possible avec les outils et le temps dont on disposait. Je me suis appliqué à élaborer une organisation intuitive et un rendu agréable.
 
-On a été contraint de retourner à la programmation en C pour terminer notre Cursus dans les temps et le projet est donc inachevé pour l'instant.
+Hélas, on a assez vite été contraint de retourner à la programmation en C pour terminer notre cursus à l'école dans les temps et le projet est donc inachevé pour l'instant.
 
 
 ![](pics/pic1.png)  
