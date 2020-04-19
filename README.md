@@ -8,6 +8,6 @@ On a été contraint de retourner à la programmation en C pour terminer notre C
 
  Samples | Samples
 -------------------------|-------------------------
-![](pics/pic1.png)  |  ![](pics/pic2.png)
+![](pics/pic1.png)  |  ![](pics/Pic2.png)
 ![](pics/pic4.png)  |  ![](pics/pic3.png)
 ![](pics/pic5.png)  | 
