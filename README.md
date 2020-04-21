@@ -1,6 +1,6 @@
 # Camagru
 
-L'objectif est de réaliser un site assez proche d'instagram, c'est à dire une plateforme de pubication et partage de photos ainsi que d'échange autour de celles-ci.
+L'objectif est de réaliser un site assez proche d'instagram, c'est à dire une plateforme de pubication et de partage de photos ainsi que d'échange autour de celles-ci.
 
 On a commencé ce projet juste après la "**Piscine Web**" de l'école 42, une formation accélérée de deux semaines en **HTML**, **CSS**, **PHP** et **Mysql**. Nous étions limités par le sujet à ces technologies et au **JavaScript**. Il a donc fallu approfondir les bases acquises pendant la piscine et prendre en main le **Javascript** à peine survolé jusqu'ici.
 
