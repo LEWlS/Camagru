@@ -6,7 +6,7 @@ J'ai commencé ce projet juste après la "**Piscine Web**" de l'école 42, une f
 
 Je me suis d'abord penché sur le **front**. J'ai alors travaillé à rendre le site aussi beau et ergonomique que possible avec les outils et le temps dont je disposais. Je me suis appliqué à élaborer une organisation intuitive et un rendu agréable.
 
-Hélas, j'ai assez vite été contraint de retourner à la programmation en **C** pour terminer mon cursus à l'école 42 dans les temps et le projet est donc inachevé pour l'instant.
+Hélas, j'ai assez vite été contraint de retourner à la programmation en **C** pour terminer mon cursus à l'école 42 dans les temps, le projet est donc inachevé pour l'instant.
 
 
 ![](pics/pic1.png)  
